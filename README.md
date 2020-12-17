@@ -4,10 +4,11 @@ Container image running [BrowserUp Proxy](https://github.com/browserup/browserup
 
 ## Build
 
-Provide the BrowserUp Proxy version with the `--build-arg` flag:
+Optionally, provide the BrowserUp Proxy version with the `--build-arg` flag.  
+However, beware that [releases](github.com/browserup/browserup-proxy/releases) file names are not always consistent (2.1.1 file & archived dir names have `-SNAPSHOT` suffix). **This version of the Dockerfile is thus specific to 2.1.1**.
 
 ```
-docker build . -t autifyhq/browserup-proxy:2.0.1 --build-arg version=2.0.1
+docker build . -t autifyhq/browserup-proxy:2.1.1 --build-arg version=2.1.1
 ```
 
 ## Contribute
